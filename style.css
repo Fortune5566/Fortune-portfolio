@@ -394,7 +394,7 @@ footer {
 
 /* CONTACT SECTION */
 
-.contact .grid-container{
+.contact .grid-container {
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -504,6 +504,7 @@ footer {
         color: white;
         transition: 0.5s ease;
     }
+
     header #show-menu:checked~nav {
         left: 0;
         width: 100%;
@@ -522,98 +523,77 @@ footer {
     .hidden-bars {
         display: block;
     }
-
-    @media only screen and (max-width:768) {
-        .intro-text h1 strong{
-            font-size: 1rem;
-
-        }
-        .grid{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2em;
-            align-items: center;
-        }
-    }
-
-    @media only screen and (max-width: 600px) {
-        .resume .grid {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        @media only screen and (max-width: 600px) {
-            .grid-container {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                gap: 5em;
-            }
-        }
-        @media only screen and (max-width: 600px) {
-            .testimonial .grid {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-            }
-        }
-        
-    }
-
-    @media only screen and (max-width:768px) {
-        .flex-1 {
-            background-color: rgb(67, 64, 64);
-            padding: 1em 3em;
-            color: gray;
-            text-align: center;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-        @media only screen and (max-width:600px) {
-            .flex-1 {
-                background-color: rgb(67, 64, 64);
-                padding: 1em 3em;
-                color: gray;
-                text-align: center;
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-            }
-        }
-    }
-
-    @media only screen and (max-width:768px) {
-        .blog-1 .text {
-            padding: 2em 2em;
-            line-height: 1.7;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-        @media only screen and (max-width:600px) {
-            .blog-1 .text {
-                padding: 2em 2em;
-                line-height: 1.7;
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-            }
-    }
-    }
-
-    @media only screen and (max-width:600px) {
-        .contact .grid-container{
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-
-
-
 }
+
 @media only screen and (max-width:768px) {
+    .intro-text h1 strong {
+        font-size: 1rem;
 
-    .services .flex-container{
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        align-items: center;
+    }
+    
+    .flex-1 {
+        background-color: rgb(67, 64, 64);
+        padding: 1em 3em;
+        color: gray;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog-1 .text {
+        padding: 2em 2em;
+        line-height: 1.7;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services .flex-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    .blog .flex-container{
+    
+    .blog .flex-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
+@media only screen and (max-width:600px) {
+    .resume .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5em;
+    }
+
+    .testimonial .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .flex-1 {
+        background-color: rgb(67, 64, 64);
+        padding: 1em 3em;
+        color: gray;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog-1 .text {
+        padding: 2em 2em;
+        line-height: 1.7;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
